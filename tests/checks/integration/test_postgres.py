@@ -426,4 +426,3 @@ class TestPostgres(AgentCheckTest):
         self.assertServiceMetadata(['version'], count=2)
 
         self.coverage_report()
-
