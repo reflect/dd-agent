@@ -218,7 +218,7 @@ class TestPostgres(AgentCheckTest):
 
         self.coverage_report()
 
-   def test_psycopg2(self):
+    def test_psycopg2(self):
         host = 'localhost'
         port = 15432
         dbname = 'datadog_test'
@@ -229,7 +229,7 @@ class TestPostgres(AgentCheckTest):
                 'port': port,
                 'username': 'datadog',
                 'password': 'datadog',
-                'use_psycopg2': 'yes'
+                'use_psycopg2': 'yes',
                 'dbname': dbname,
                 'relations': ['persons'],
                 'custom_metrics': [{
