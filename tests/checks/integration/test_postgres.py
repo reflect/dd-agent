@@ -42,7 +42,7 @@ class TestPostgres(AgentCheckTest):
             }
         ]
 
-        self.run_check_twice(dict(instances=instances))
+        self.run_check_twice(dict(instances=instances), force_reload=True)
 
         # Useful to get server version
         # FIXME: Not great, should have a function like that available
@@ -251,7 +251,7 @@ class TestPostgres(AgentCheckTest):
             }
         ]
 
-        self.run_check_twice(dict(instances=instances))
+        self.run_check_twice(dict(instances=instances), force_reload=True)
 
         # Useful to get server version
         # FIXME: Not great, should have a function like that available
